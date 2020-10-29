@@ -4,11 +4,11 @@ using System.Text;
 
 namespace IntroOOP
 {
-    class Motorbike
+    class Motorbike: MotorVehicle
     {
         bool hasSideCar;
 
-        public Motorbike(bool hasSideCar, string make, string model)
+        public Motorbike(bool hasSideCar, string make, string model):base(make, model)
         {
             this.hasSideCar = hasSideCar;
         }
