@@ -4,12 +4,12 @@ using System.Text;
 
 namespace IntroOOP
 {
-    class MotorVehicle
+    abstract class MotorVehicle
     {
-        string make;
-        string model;
-        int speed = 0;
-        int gear = 0;
+        protected string make;
+        protected string model;
+        protected int speed = 0;
+        protected int gear = 0;
 
         public MotorVehicle(string make, string model)
         {
@@ -17,7 +17,7 @@ namespace IntroOOP
             this.model = model;
         }
 
-        public void Accelerate()
+        public virtual void Accelerate()
         {
             speed += gear;
         }

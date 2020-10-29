@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Runtime.CompilerServices;
 using System.Text;
 
 namespace IntroOOP
@@ -15,6 +16,15 @@ namespace IntroOOP
         public void Wheelie()
         {
             Console.WriteLine("Pulling a Wheelie");
+        }
+
+        public override void Accelerate()
+        {
+            base.Accelerate();
+            if (speed > 3)
+            {
+                Console.WriteLine("Whoa, slow down");
+            }
         }
     }
 }
