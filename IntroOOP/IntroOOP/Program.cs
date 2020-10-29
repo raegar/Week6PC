@@ -6,7 +6,14 @@ namespace IntroOOP
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Car car1 = new Car(false, "Ford", "Fiesta");
+
+            car1.DisplayDetails();
+            car1.ChangeGearUp();
+            car1.Accelerate();
+            car1.Accelerate();
+            car1.DisplayDetails();
+
         }
     }
 }

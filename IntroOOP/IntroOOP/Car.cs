@@ -8,12 +8,7 @@ namespace IntroOOP
     {
         bool isConvertible;
 
-        public Car(string make, string model)
-        {
-            this.isConvertible = isConvertible;
-        }
-
-        public Car(bool isConvertible, string make, string model)
+        public Car(bool isConvertible, string make, string model): base(make, model)
         {
             this.isConvertible = isConvertible;
         }
